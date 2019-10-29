@@ -1,0 +1,28 @@
+<div>
+    <h6 class="h6"> Lista de tareas</h6>
+  </div>
+  <div>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>Id</th>
+          <th>Titulo</th>
+          <th>Descripción</th>
+          <th>Prioridad</th>
+          <th>Ver</th>
+  
+        </tr>
+      </thead>
+      <tr *ngFor="let task of tasks">
+        <td>{{task.id}}</td>
+        <td>{{task.title}}</td>
+        <td>{{task.description}}</td>
+        <td><span *ngIf="task.priority===true;"> <b>Prioritario</b> </span></td>
+        <td><a routerLink="/taskEdit/{{task.id}}">
+            ver
+          </a>
+        </td>
+  
+      </tr>
+    </table>
+  </div>

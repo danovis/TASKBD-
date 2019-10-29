@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Task Add </h1>
+  </div>
+  <p>Agregar Task</p>
+  <!-- <div class="form-group">
+      <label>Id:
+        <input [(ngModel)]="task.id" class="form-control" placeholder="digite id" type="number" />
+      </label>
+    </div> -->
+  
+  <div class="form-group">
+    <label>Titulo:
+      <input [(ngModel)]="task.title" class="form-control" placeholder="digite titulo" type="text" />
+    </label>
+  </div>
+  
+  <div class="form-group">
+    <label>Descripción:
+      <input [(ngModel)]="task.description" class="form-control" placeholder="digite descripción " type="text" />
+    </label>
+  </div>
+  <div class="form-group">
+    <label>Prioritario:
+      <input type="checkbox" class="form-control" [(ngModel)]="task.priority">
+    </label>
+  </div>
+  <div class="form-group">
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+  </div>
+  
+  <div>
+  
+  </div>
